@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Archangelsk';
+    src: url('../fonts/ofont.ru_Archangelsk.ttf');
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+p {}
 .header-block__menu {
     display: flex;
     justify-content: space-between;
@@ -15,20 +26,65 @@
 }
 .header {
     background-image: url('../images/background-header.jpg');
-    width: 100vw;
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .header-block__info {
     width: 624px;
     height: 369px;
     background-color: #F8F200;
     clip-path: polygon(0% 100%, 0% 49px, 49px 0%, 100% 0%, 100% calc(100% - 49px), calc(100% - 49px) 100%);
-    align-self: flex-end;
-    justify-self: flex-end;
+     margin-top: auto;
+     align-self: flex-end;
 }
-.header-block {
+.header-block {    
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
+.header-block__text {
+    font-size: 62px;
+    line-height: 102%;
+    font-weight: 400;
+    font-family: 'Archangelsk', sans-serif;
+    padding-bottom: 25px;
+}
+.header-block__button {
+    line-height: 167%;
+    background-color: black;
+    font-size: 24px;
+    color: #F8F200;
+    padding: 19px 50px;
+    
+}
+.header-block__container {
+    padding: 70px;
+}
+.description-title {
+    font-family: 'Archangelsk', sans-serif;
+    font-weight: 400;
+    line-height: 102%;
+    font-size: 62px;
+    margin-top: 70px;
+}
+.description-text {
+    font-weight: 400;
+    line-height: 189%;
+    font-size: 18x;
+    margin-top: 25px;
+    max-width: 849px;
+    font-family: 'Roboto', sans-serif;
+}
+.text-blue {
+    font-weight: 700;
+    color: #52bedc;
+}
+/* .description-images {
+    display: grid;
+    grid-template-columns: calc(460px/1248px) calc(788px/1248px);
+    grid-template-rows: 1fr 1fr;
+    
+} */
