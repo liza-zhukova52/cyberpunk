@@ -35,7 +35,7 @@ p {}
     background-position: center;
 }
 .header-block__info {
-    width: 624px;
+    max-width: 624px;
     height: 369px;
     background-color: #F8F200;
     clip-path: polygon(0% 100%, 0% 49px, 49px 0%, 100% 0%, 100% calc(100% - 49px), calc(100% - 49px) 100%);
@@ -210,4 +210,97 @@ p {}
     line-height: 102%;
     max-width: 624px;
     margin-top: 70px;
+}
+.buy-game__set {
+    font-family: 'Roboto', sans-serif;
+    color: #52bedc;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.buy-game__list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.buy-game__list-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+.buy-game__list-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.buy-game__choice {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #52bedc;
+    margin-top: 70px;
+}
+.buy-game__platforms-images {
+    display: flex;
+    row-gap: 48px;
+    column-gap: 80px;
+    align-items: center;
+    max-width: 320px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 71px;
+}
+.footer-block__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-block__texts {
+    display: flex;
+    gap: 32px;
+}
+.footer-block__images {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.copyright__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.copyright {
+    background-color: #000;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+@media (max-width: 768px) {
+    .header-block__menu {
+        flex-direction: column;
+    }
+
+    .header-menu__list {
+        gap: 28px;
+    }
+}
+@media (max-width: 480px) {
+    .header-block__text {
+        font-size: 30px;
+        height: 207px;
+    }
 }
