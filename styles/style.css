@@ -126,6 +126,7 @@ p {}
     max-width: 952px;
     font-family: 'Roboto', sans-serif;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 .about-screen__block {
     display:grid;
@@ -404,9 +405,9 @@ p {}
 @media (max-width: 480px) {
     .header-block__text {
         font-size: 30px;
-        height: 207px;
         text-align: center;
         padding-top: 30px;
+        width: 295px;
     }
     .container {
         padding-right: 0;
@@ -471,6 +472,15 @@ p {}
         flex-direction: column;
         align-items: center;
         gap: 0;
+    }
+    .header-block__info {
+        height: 207px;
+        display: flex;
+        gap: 25px;
+        width: 100%;
+        padding-bottom: 30px;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media (max-width: 360px) {
